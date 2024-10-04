@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunnyHub - Platform Belajar Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .text-gradient {
+            @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+          }
+          .bg-gradient {
+            @apply bg-gradient-to-r from-blue-600 to-indigo-600;
+          }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient rounded-lg"></div>
+                    <span class="text-2xl font-bold text-gradient">SunnyHub</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition-all duration-200 hover:scale-105">Beranda</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition-all duration-200 hover:scale-105">Kursus</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition-all duration-200 hover:scale-105">Mentor</a>
+                    <button class="bg-gradient text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-200 hover:-translate-y-0.5">
+                        Mulai Belajar
+                    </button>
+                </div>
+                <button class="md:hidden text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 via-white to-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Belajar Lebih Cerdas dengan <span class="text-gradient">SunnyHub</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 md:pr-12">
+                        Platform pembelajaran digital yang membantu kamu menguasai skill baru dengan cara yang menyenangkan
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="bg-gradient text-white px-8 py-4 rounded-full text-lg font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-1 transform">
+                            Mulai Belajar
+                        </button>
+                        <button class="px-8 py-4 rounded-full text-lg font-medium border-2 border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
+                            Lihat Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+                    <img src="images/blue.jpeg" alt="Learning" class="relative rounded-3xl shadow-2xl"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Fitur Unggulan Kami</h2>
+                <p class="text-gray-600">Berbagai fitur terbaik untuk mendukung proses pembelajaran kamu</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-2xl bg-white border border-gray-100 hover:border-blue-500 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-all duration-300">
+                        <svg class="w-6 h-6 text-blue-500 group-hover:text-white transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 group-hover:text-blue-500 transition-all duration-300">Belajar Online</h3>
+                    <p class="text-gray-600">Akses materi pembelajaran kapan saja dan dimana saja melalui berbagai perangkat</p>
+                </div>
+                
+                <div class="group p-8 rounded-2xl bg-white border border-gray-100 hover:border-blue-500 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-all duration-300">
+                        <svg class="w-6 h-6 text-blue-500 group-hover:text-white transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 group-hover:text-blue-500 transition-all duration-300">Mentor Expert</h3>
+                    <p class="text-gray-600">Dibimbing langsung oleh praktisi berpengalaman di bidangnya</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-white border border-gray-100 hover:border-blue-500 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-all duration-300">
+                        <svg class="w-6 h-6 text-blue-500 group-hover:text-white transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 group-hover:text-blue-500 transition-all duration-300">Sertifikasi</h3>
+                    <p class="text-gray-600">Dapatkan sertifikat resmi yang diakui industri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata Mereka?</h2>
+                <p class="text-gray-600">Testimoni dari para alumni yang telah berhasil</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="images/Ghani.jpg" alt="Avatar" class="rounded-full ring-4 ring-blue-50 w-20 h-20"/>
+                        <div>
+                            <h4 class="font-semibold">Ghefira</h4>
+                            <p class="text-blue-600">UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"LearnHub membuat saya bisa menguasai UI/UX Design dalam waktu 3 bulan. Materinya lengkap dan mentornya sangat membantu."</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="images/Pas Foto Arkan 4x6.jpg" alt="Avatar" class="rounded-full ring-4 ring-blue-50 w-20 h-20"/>
+                        <div>
+                            <h4 class="font-semibold">Muhammad Arkan Raihan</h4>
+                            <p class="text-blue-600">Cloud Engginer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"Belajar tentang cloud computing jadi menyenangkan dengan metode pembelajaran yang interaktif. Sangat direkomendasikan!"</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="images/Yas.jpg " alt="Avatar" class="rounded-full ring-4 ring-blue-50 w-20 h-20"/>
+                        <div>
+                            <h4 class="font-semibold">Khizny</h4>
+                            <p class="text-blue-600">Data Analyst</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"Materi yang diberikan sangat up-to-date dengan kebutuhan industri. Sekarang sudah bekerja sebagai Data Analyst."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient rounded-lg"></div>
+                        <span class="text-xl font-bold text-white">LearnHub</span>
+                    </div>
+                    <p class="text-gray-400">Platform pembelajaran digital untuk masa depan yang lebih baik</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.
